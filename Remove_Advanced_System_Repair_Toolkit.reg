@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\DISM RestoreHealth]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\SFC ScanNow]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Check Disk]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Malicious Software Removal Tool]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Open Disk Cleanup]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Clear Temp Files]
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Clear Prefetch Files]
