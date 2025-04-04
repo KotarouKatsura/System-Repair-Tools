@@ -1,0 +1,53 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools]
+"icon"="cmd.exe"
+"HasLUAShield"=""
+"SubCommands"=""
+"Position"="Bottom"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\DISM RestoreHealth]
+"icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\DISM RestoreHealth\command]
+@="powershell.exe -Command \"Start-Process cmd -ArgumentList '/k DISM /Online /Cleanup-Image /RestoreHealth' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\SFC ScanNow]
+"icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\SFC ScanNow\command]
+@="powershell.exe -Command \"Start-Process cmd -ArgumentList '/k sfc /scannow' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Check Disk]
+"icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Check Disk\command]
+@="powershell.exe -Command \"Start-Process cmd -ArgumentList '/k chkdsk C: /f /r' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Malicious Software Removal Tool]
+"icon"="mrt.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Malicious Software Removal Tool\command]
+@="powershell.exe -Command \"Start-Process 'C:\\Windows\\System32\\mrt.exe' -WorkingDirectory 'C:\\Windows\\System32'"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Open Disk Cleanup]
+"icon"="cleanmgr.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Open Disk Cleanup\command]
+@="cleanmgr.exe"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Clear Temp Files]
+"icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Clear Temp Files\command]
+@="powershell.exe -Command \"Start-Process cmd -ArgumentList '/k del /s /q %TEMP%\\* & del /s /q C:\\Windows\\Temp\\* & echo Temp files deleted. & pause' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Clear Prefetch Files]
+"icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\System Repair Tools\shell\Clear Prefetch Files\command]
+@="powershell.exe -Command \"Start-Process cmd -ArgumentList '/k del /s /q C:\\Windows\\Prefetch\\* & echo Prefetch files deleted. & pause' -Verb runAs\""
+
